@@ -1,0 +1,40 @@
+Forklaring på opsjoner: 
+
+-f ; 		Format, specifies the output file format, to be using the elf 
+		file.
+		
+
+
+-F ;		Specifies the debug information format, to be using the dwarf
+		assembler.
+
+-g ;		Causes nasm to generate debug information, for the file
+		hello.asm.
+
+ld ;		The command combines a number of objects and archive files, 
+		relocates their data and ties up symbol references. The last
+		step before compiling a program is usually to run ld.
+
+ld -m ;		Emulate the emulation linker. 
+		
+
+elf_i386 ; 	ELF for i386 - 32-bit i386 binaries
+
+ld -o ;		Use output as the name for the proram produced by ld; if this
+		option is not specified, the name a.out is used by default.
+
+elf ;		An executable file using the ELF file format consists of an
+		Elf header, followed by a program header table or a section
+		header table, or both. The ELF header is always at offset 
+		zero of the file. The program header table and the section 
+		header table's offset in the file are defined in the ELF header.
+		The two tables describe the rest of the particularities of
+		the file.
+		
+		This header file describes the above mentioned headers as
+		C structures and also includes structures for dynamic sections,
+		relocation sections and symbol tables.
+
+dwarf ;		Is a debugging format for ELF files. Created to overcome 
+		shortcomings in STAB, allowing for more detailed and compact
+		descriptions of data structures, such as in C.
